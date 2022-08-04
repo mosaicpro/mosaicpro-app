@@ -1,1 +1,1 @@
-web: giunicorn backend.wsgi --log-file
+web: giunicorn backend.wsgi --log-file - 
