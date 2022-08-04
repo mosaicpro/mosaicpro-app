@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-+l8$-1j3zi7shqh85$he*d02s)^*!zi#_^^)w-np8%f+ni@z_u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','mosaic-pro.herokuapp.com','mosaicpro.io']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','mosaic-pro.herokuapp.com','mosaicpro.io','www.mosaicpro.io']
 
 # Application definition
 
