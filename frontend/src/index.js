@@ -6,6 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import "./App.css";
 import { Provider } from "react-redux";
 import store from "./store";
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-2J3N3GYDFC')
+ReactGA.pageview(window.location.pathname)
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
