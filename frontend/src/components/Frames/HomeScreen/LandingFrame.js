@@ -18,6 +18,7 @@ function LandingFrame({aboutRef}) {
           "d-flex justify-content-around min-vh-75 " + (isMobile ? "p-3" : "")
         }
       >
+
         {(!isMobile || isTablet) && (
           <Fade delay={500} left>
             <div className="d-flex flex-column d-none d-lg-block">

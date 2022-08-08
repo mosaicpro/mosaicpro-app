@@ -144,7 +144,7 @@ function CustomNavbar({
               {userInfo ? (
                 <li>
                   <Link
-                    className=" text-charcoal nav-text me-3 pb-2 "
+                    className=" text-charcoal nav-text me-3 pb-2"
                     to="admin/dashboard"
                   >
                     {" "}
@@ -157,7 +157,7 @@ function CustomNavbar({
               {userInfo ? (
                 <li>
                   <Button
-                    className=" btn-primary text-charcoal nav-text me-3 pb-2 fw-bold"
+                    className=" btn-primary text-light nav-text me-3 pb-2 fw-bold"
                     onClick={logoutHandler}
                   >
                     {" "}

@@ -13,8 +13,9 @@ $darkPurple: #4e24b0;
 $navbarHeight: 60px;
 $danger: #f1aeb5;
 $darkCharcoal: #222;
-$mediumGray: $mediumGray;
+$mediumGray: #999;
 $gray: #f3f4f6;
+$customDarkBlue: #000080;
 
 $theme-colors: (
   "primary": $primary,
@@ -26,7 +27,7 @@ $theme-colors: (
   "darkBlue": $darkBlue,
   "darkCharcoal": $darkCharcoal,
   "charcoal": $charcoal,
-  "grey": $grey,
+  "grey": $gray,
 );
 
 * {
@@ -37,7 +38,7 @@ body {
   height: 100%;
   font-family: "Avalon", "Poppins", sans-serif;
   overflow-x: auto;
-  overflow-y: scroll;
+  overflow-y: none;
 }
 
 ul {
@@ -90,7 +91,7 @@ a {
 }
 
 .nav-logo {
-  width: navbarHeight;
+  width: $navbarHeight;
 }
 
 .navbar-spacer {
@@ -105,6 +106,7 @@ a {
 .nav-text {
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.25rem;
 }
 
 .company-name {
@@ -113,7 +115,9 @@ a {
 .hero-text {
   font-size: 6rem;
 }
-
+.bg-dark-blue {
+  background-color: $darkBlue
+}
 .screen-spacer {
   width: 100%;
   height: 24px;
@@ -173,6 +177,8 @@ video {
   background-color: transparent;
   perspective: 1000px;
 }
+
+
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {

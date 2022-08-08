@@ -14,10 +14,11 @@ function EnquireButton({ setModalShow }) {
             position: "fixed",
             right: "0",
             zIndex: "1",
+            backgroundColor: "#221e43"
           }}
           className={
-            "bg-dark-blue text-light btn rounded-circle bottom-position set-purple" +
-            (isMobile ? " me-4" : " mb-10 me-5")
+            " text-light btn rounded-circle bottom-position set-purple" +
+            (isMobile ? " me-4" : " me-5")
           }
           onClick={() => setModalShow(true)}
         >

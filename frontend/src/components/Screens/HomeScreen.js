@@ -7,6 +7,7 @@ import WorkFrame from "../Frames//HomeScreen/WorkFrame";
 import Fade from "react-reveal/Fade";
 import EnquireButton from "../Elements/EnquireButton";
 
+
 function HomeScreen({
   ref1,
   ref2,
@@ -24,6 +25,7 @@ function HomeScreen({
       <div>
         <EnquireButton setModalShow={setModalShow} />
       </div>
+
       <div ref={ref1}>
         <LandingFrame/>
       </div>

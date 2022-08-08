@@ -26,6 +26,8 @@ import CreateWorkProjectScreen from "./components/Screens/Admin/CreateWorkProjec
 import ProfileSettingsScreen from "./components/Screens/Admin/ProfileSettingsScreen";
 import ManageUsersScreen from "./components/Screens/Admin/ManageUsersScreen";
 import ViewWorkProjectScreen from "./components/Screens/Admin/ViewWorkProjectScreen";
+import CookieConsent from "react-cookie-consent";
+
 
 
 
@@ -73,6 +75,11 @@ function App() {
         <CustomModal title="Get in touch" show={modalShow}>
           <ContactForm onHide={() => setModalShow(false)} />
         </CustomModal>
+        <CookieConsent
+          buttonText="OK"
+          style={{ background: "#fff", color:"#000", maxHeight:"60px" }}
+          buttonStyle={{ color:"#FFF", background: "#6c3dd7"}}        
+        >We use cookies to enhance your experience.</CookieConsent>
         <main onScroll={listenToScroll}>
           <Routes>
             <Route
