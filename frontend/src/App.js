@@ -26,6 +26,8 @@ import CreateWorkProjectScreen from "./components/Screens/Admin/CreateWorkProjec
 import ProfileSettingsScreen from "./components/Screens/Admin/ProfileSettingsScreen";
 import ManageUsersScreen from "./components/Screens/Admin/ManageUsersScreen";
 import ViewWorkProjectScreen from "./components/Screens/Admin/ViewWorkProjectScreen";
+import ReactGA from 'react-ga';
+
 
 
 function App() {
@@ -39,6 +41,9 @@ function App() {
       setIsVisible(true);
     }
   };
+
+  ReactGA.initialize('G-2J3N3GYDFC');
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
