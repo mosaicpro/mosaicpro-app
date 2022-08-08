@@ -44,10 +44,10 @@ function App() {
 
 
 
-  useEffect(() => {
-    ReactGA.initialize('G-2J3N3GYDFC')
-    ReactGA.pageview(window.location.pathname)
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.initialize('G-2J3N3GYDFC')
+  //   ReactGA.pageview(window.location.pathname)
+  // }, []);
 
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
