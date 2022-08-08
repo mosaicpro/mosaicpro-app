@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect,  } from "react";
 import {
   HashRouter as Router,
   Route,
@@ -43,12 +43,11 @@ function App() {
   };
 
 
-  const location = useLocation();
 
   useEffect(() => {
-    ReactGA.initialize('G-2J3N3GYDFC');
-    ReactGA.pageview(location.pathname + location.search);
-    }, [location]);
+    ReactGA.initialize('G-2J3N3GYDFC')
+    ReactGA.pageview(window.location.pathname)
+  }, []);
 
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
