@@ -42,8 +42,13 @@ function App() {
     }
   };
 
-  ReactGA.initialize('G-2J3N3GYDFC');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize('G-2J3N3GYDFC');
+    ReactGA.pageview(location.pathname + location.search);
+    }, [location]);
 
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
