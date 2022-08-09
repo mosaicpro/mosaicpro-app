@@ -36,8 +36,9 @@ function BlogPostScreen({ setSelect, setNavbar }) {
           Back{" "}
         </Link>
 
-        <h1 className="mb-4">{post.title}</h1>
-        <div className="poppins fw-normal">{ReactHtmlParser(post.description)}</div>
+        <h1 className="mt-4 mb-4">{post.title}</h1>
+        <div className="poppins fw-normal p-3">{ReactHtmlParser(post.description)}</div>
+        <div className="mb-4"> &nbsp;</div>
       </div>
     </div>
   );
