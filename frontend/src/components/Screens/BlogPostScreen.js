@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Banner from "../Elements/Banner";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import ReactHtmlParser from 'react-html-parser';
+
 
 function BlogPostScreen({ setSelect, setNavbar }) {
   const [post, setPost] = useState([]);
@@ -35,7 +37,7 @@ function BlogPostScreen({ setSelect, setNavbar }) {
         </Link>
 
         <h1 className="mb-4">{post.title}</h1>
-        <p className="poppins fw-normal">{post.description}</p>
+        <div className="poppins fw-normal">{ReactHtmlParser(post.description)}</div>
       </div>
     </div>
   );
