@@ -3,7 +3,7 @@ import Banner from "../Elements/Banner";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import ReactHtmlParser from 'react-html-parser';
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
 
 function BlogPostScreen({ setSelect, setNavbar }) {
@@ -39,7 +39,7 @@ function BlogPostScreen({ setSelect, setNavbar }) {
         </Link>
         </div>
         <h1 className="mt-4 mb-4">{post.title}</h1>
-        <div className='poppins fw-normal w-75'>{ReactHtmlParser(post.description)}</div>
+        <div className={ isMobileOnly ? "poppins fw-normal w-85" :  "poppins fw-normal w-75"} >{ReactHtmlParser(post.description)}</div>
         <div className="mb-4"> &nbsp;</div>
       </div>
     </div>
