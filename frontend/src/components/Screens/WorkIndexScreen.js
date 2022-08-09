@@ -46,7 +46,11 @@ function WorkIndexScreen({ setSelect, setNavbar }) {
         height={isMobile ? "60vh" : "80vh"}
         opacity="100%"
         layerColor="rgba(256,256,256,0.1)"
-      ></Banner>
+      >
+        <div className="ms-3 border-3 border-start text-light pt-5 ps-3 fw-bold avalon h2">
+          work
+        </div>
+      </Banner>
       <div className="w-100 min-vh-100 bg-charcoal">
         {projects.map((project) => (
           <WorkIndexCard
