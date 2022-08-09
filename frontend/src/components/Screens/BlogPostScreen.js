@@ -31,11 +31,13 @@ function BlogPostScreen({ setSelect, setNavbar }) {
         opacity="100%"
         layerColor="rgba(256,256,256,0.1)"
       ></Banner>
-      <div className="w-100 min-vh-75 mt-4 mb-4 ms-3 avalon">
+      <div className="w-100 min-vh-75 mt-4 mb-4 ms-3 avalon d-flex align-items-center justify-content-center flex-column">
+        <div className="w-100 d-flex justify-content-end me-5 pe-3">
         <Link to={"../blog/"} className="h5 pt-3 pb-3">
           {" "}
           Back{" "}
         </Link>
+        </div>
         <h1 className="mt-4 mb-4">{post.title}</h1>
         <div className='poppins fw-normal w-75'>{ReactHtmlParser(post.description)}</div>
         <div className="mb-4"> &nbsp;</div>
