@@ -9,7 +9,7 @@ import VideoCard from "../../Elements/VideoCard";
 function WorkFrame({ setSelect }) {
   const vid1 = "./static/videos/hills.mp4";
   const bgImage1 = "./static/images/surgery.jpg";
-  const bgImage2 = "./static/images/serbia.jpg";
+  const bgImage2 = "./static/images/hannah.png";
   const bgImage3 = "./static/images/jewellery.jpg";
   const rowClass = "d-flex justify-content-center m-auto mt-3";
   const secondColClass = isMobile ? "mb-3 w-85" : "pe-2 ";
@@ -32,7 +32,7 @@ function WorkFrame({ setSelect }) {
         <Row className={rowClass}>
           <Col md={12} className="w-85">
             <WorkCard
-              title="Ivan Lazic"
+              title="Hannah Lebrecht"
               bgImage={bgImage2}
               styling={workCardStyling}
               to='work/'

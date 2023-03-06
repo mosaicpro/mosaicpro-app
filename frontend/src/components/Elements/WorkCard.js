@@ -53,7 +53,7 @@ function WorkCard({ title, styling, bgImage, to }) {
                 <div
                   style={{ minWidth: "60px", maxWidth:"120px", maxHeight:'40px' }}
                   className="text-center border border-light text-light border-1 text-sm rounded p-1 mt-5 me-3">
-                  TV
+                  Performance
               </div>
               <div
                   style={{ minWidth: "60px", maxWidth:"120px" }}
